@@ -1,12 +1,12 @@
 package httpserver
 
 import (
-	"cvgo/provider/core"
-	"cvgo/provider/core/types"
 	"embed"
 	"errors"
 	"fmt"
 	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/core/types"
 	"html/template"
 	"io/fs"
 	"net/http"

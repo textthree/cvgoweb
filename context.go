@@ -2,11 +2,11 @@ package httpserver
 
 import (
 	"context"
-	"cvgo/provider/clog"
-	"cvgo/provider/config"
-	"cvgo/provider/core"
-	"cvgo/provider/i18n"
 	"github.com/textthree/cvgokit/castkit"
+	"github.com/textthree/provider/clog"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/i18n"
 	"net/http"
 	"sync"
 	"time"

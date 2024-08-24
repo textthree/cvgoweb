@@ -1,7 +1,7 @@
 package httpserver
 
 import (
-	"cvgo/provider/core"
+	"github.com/textthree/provider/core"
 )
 
 type HttpServerService struct {

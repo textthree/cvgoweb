@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"cvgo/provider/httpserver"
 	"fmt"
+	"github.com/textthree/cvgoweb"
 )
 
 func RequestLog() httpserver.MiddlewareHandler {

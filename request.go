@@ -2,12 +2,12 @@ package httpserver
 
 import (
 	"bytes"
-	"cvgo/provider"
 	"encoding/json"
 	"encoding/xml"
 	"errors"
 	"github.com/spf13/cast"
 	"github.com/textthree/cvgokit/castkit"
+	"github.com/textthree/provider"
 	"io"
 	"io/ioutil"
 	"mime/multipart"

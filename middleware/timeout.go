@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"context"
-	"cvgo/provider/httpserver"
 	"fmt"
+	"github.com/textthree/cvgoweb"
 	"log"
 	"time"
 )

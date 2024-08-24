@@ -1,9 +1,9 @@
 package middleware
 
 import (
-	"cvgo/provider/config"
-	"cvgo/provider/httpserver"
 	"errors"
+	"github.com/textthree/cvgoweb"
+	"github.com/textthree/provider/config"
 	"log"
 	"net"
 	"os"

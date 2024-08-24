@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"cvgo/provider"
-	"cvgo/provider/httpserver"
-	"cvgo/provider/i18n"
 	"github.com/spf13/viper"
 	"github.com/textthree/cvgokit/filekit"
+	"github.com/textthree/cvgoweb"
+	"github.com/textthree/provider"
+	"github.com/textthree/provider/i18n"
 	"os"
 	"path/filepath"
 )

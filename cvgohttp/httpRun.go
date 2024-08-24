@@ -1,14 +1,14 @@
 package cvgohttp
 
 import (
-	"cvgo/provider"
-	"cvgo/provider/clog"
-	"cvgo/provider/config"
-	"cvgo/provider/core"
-	"cvgo/provider/core/types"
-	"cvgo/provider/httpserver"
-	"cvgo/provider/i18n"
 	"fmt"
+	"github.com/textthree/cvgoweb"
+	"github.com/textthree/provider"
+	"github.com/textthree/provider/clog"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/core/types"
+	"github.com/textthree/provider/i18n"
 	"net/http"
 )
 
