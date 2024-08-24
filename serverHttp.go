@@ -99,7 +99,7 @@ func (self *Engine) AddRoute(method, prefix, uri string, routeType int8, handler
 		err := errors.New("route exist: " + uri)
 		panic(err)
 	}
-	self.router[method][prefix+"/"+uri] = t3WebRoute{
+	self.router[method][prefix+uri] = t3WebRoute{
 		middlewares:    middlewares,
 		requestHandler: handler,
 		routeType:      routeType,
@@ -170,6 +170,12 @@ func (self *Engine) FindRouteHandler(request *http.Request) t3WebRoute {
 	// 转换大小写，确保大小写不敏感
 	method := strings.ToUpper(request.Method)
 	uri := strings.ToLower(request.URL.Path)
+
+	//fmt.Println(method, uri)
+	//for k, _ := range self.router[method] {
+	//	fmt.Println(k)
+	//}
+
 	// 查找第一层 map
 	if methodHandlers, ok := self.router[method]; ok {
 		if handler, ok := methodHandlers[uri]; ok {
