@@ -1,10 +1,6 @@
 // 分组路由注册
 package httpserver
 
-import (
-	"strings"
-)
-
 // IGroup 路由分组接口
 type IGroup interface {
 	Get(string, RequestHandler, ...MiddlewareHandler)
@@ -33,17 +29,14 @@ func (p *Prefix) Get(uri string, handler RequestHandler, middlewares ...Middlewa
 }
 
 func (p *Prefix) Post(uri string, handler RequestHandler, middlewares ...MiddlewareHandler) {
-	uri = strings.ToLower(p.prefix + uri)
 	p.httpCore.AddRoute("POST", p.prefix, uri, routeTypeGoGroup, handler, middlewares...)
 }
 
 func (p *Prefix) Put(uri string, handler RequestHandler, middlewares ...MiddlewareHandler) {
-	uri = strings.ToLower(p.prefix + uri)
 	p.httpCore.AddRoute("PUT", p.prefix, uri, routeTypeGoGroup, handler, middlewares...)
 }
 
 func (p *Prefix) Delete(uri string, handler RequestHandler, middlewares ...MiddlewareHandler) {
-	uri = strings.ToLower(p.prefix + uri)
 	p.httpCore.AddRoute("DELETE", p.prefix, uri, routeTypeGoGroup, handler, middlewares...)
 }
 

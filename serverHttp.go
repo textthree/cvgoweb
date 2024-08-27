@@ -171,10 +171,10 @@ func (self *Engine) FindRouteHandler(request *http.Request) t3WebRoute {
 	method := strings.ToUpper(request.Method)
 	uri := strings.ToLower(request.URL.Path)
 
-	//fmt.Println(method, uri)
-	//for k, _ := range self.router[method] {
-	//	fmt.Println(k)
-	//}
+	fmt.Println(method, uri)
+	for k, _ := range self.router[method] {
+		fmt.Println(k)
+	}
 
 	// 查找第一层 map
 	if methodHandlers, ok := self.router[method]; ok {
